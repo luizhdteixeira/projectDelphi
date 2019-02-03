@@ -3,10 +3,11 @@ unit udtmConexao;
 interface
 
 uses
-  System.SysUtils, System.Classes, Data.DB, Data.SqlExpr;
+  System.SysUtils, System.Classes, Data.DB, Data.SqlExpr, Data.DBXMySQL;
 
 type
   TdtmConexao = class(TDataModule)
+    SQLConnection1: TSQLConnection;
   private
     { Private declarations }
   public

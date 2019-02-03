@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2019/02/03 15:06:41.000.496,=C:\Users\luizt\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2019/02/03 15:14:51.000.353,C:\Users\luizt\Documents\Embarcadero\Studio\Projects\Unit1.pas=C:\Users\luizt\Documents\GitHub\projectDelphi\Gerenciador de Clientes\View\ufrmGerenciadorClientes.pas</Transaction>
+    <Transaction>2019/02/03 15:14:51.000.353,C:\Users\luizt\Documents\Embarcadero\Studio\Projects\Unit1.dfm=C:\Users\luizt\Documents\GitHub\projectDelphi\Gerenciador de Clientes\View\ufrmGerenciadorClientes.dfm</Transaction>
+    <Transaction>2019/02/03 15:14:58.000.542,C:\Users\luizt\Documents\Embarcadero\Studio\Projects\Project1.dproj=C:\Users\luizt\Documents\GitHub\projectDelphi\Gerenciador de Clientes\View\Gerenciador.dproj</Transaction>
+    <Transaction>2019/02/03 15:23:25.000.950,=C:\Users\luizt\Documents\GitHub\projectDelphi\Gerenciador de Clientes\View\Unit1.pas</Transaction>
+    <Transaction>2019/02/03 15:27:37.000.560,C:\Users\luizt\Documents\GitHub\projectDelphi\Gerenciador de Clientes\View\Unit1.pas=C:\Users\luizt\Documents\GitHub\projectDelphi\Gerenciador de Clientes\Controller\udtmConexao.pas</Transaction>
+    <Transaction>2019/02/03 15:27:37.000.560,C:\Users\luizt\Documents\GitHub\projectDelphi\Gerenciador de Clientes\View\Unit1.dfm=C:\Users\luizt\Documents\GitHub\projectDelphi\Gerenciador de Clientes\Controller\udtmConexao.dfm</Transaction>
+    <Transaction>2019/02/03 19:42:02.272,C:\Users\luizt\Documents\GitHub\projectDelphi\Gerenciador de Clientes\Gerenciador.dproj=C:\Users\luizt\Documents\GitHub\projectDelphi\Gerenciador de Clientes\View\Gerenciador.dproj</Transaction>
+  </Transactions>
+</BorlandProject>

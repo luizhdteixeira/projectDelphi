@@ -5,7 +5,7 @@ interface
 uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ComCtrls, Vcl.ExtCtrls, Data.DB,
-  Vcl.StdCtrls, Vcl.Grids, Vcl.DBGrids;
+  Vcl.StdCtrls, Vcl.Grids, Vcl.DBGrids, Vcl.Buttons, Vcl.Mask;
 
 type
   TForm1 = class(TForm)
@@ -19,6 +19,30 @@ type
     btnEditar: TButton;
     btnExcluir: TButton;
     btnImprimir: TButton;
+    lblNome: TLabel;
+    EdtNome: TEdit;
+    rdgpSexo: TRadioGroup;
+    lblRG: TLabel;
+    mkedtRG: TMaskEdit;
+    lblCPF: TLabel;
+    mkedtCPF: TMaskEdit;
+    btnSalvar: TButton;
+    btnCancelar: TButton;
+    dbgEndereco: TDBGrid;
+    lblEndereco: TLabel;
+    Label1: TLabel;
+    lblTelefone: TLabel;
+    dbgTelefone: TDBGrid;
+    bnbtnMais1: TBitBtn;
+    btbtnMenos1: TBitBtn;
+    btbtnMais2: TBitBtn;
+    btbtnMenos2: TBitBtn;
+    btnTrocarSenha: TButton;
+    edtSenhaAtual: TEdit;
+    edtNovaSenha: TEdit;
+    lblSenhaAtual: TLabel;
+    lblNovaSenha: TLabel;
+    pnlRodape: TPanel;
     procedure btnIncluirClick(Sender: TObject);
     procedure btnExcluirClick(Sender: TObject);
   private
@@ -43,5 +67,6 @@ procedure TForm1.btnIncluirClick(Sender: TObject);
 begin
 //
 end;
+
 
 end.

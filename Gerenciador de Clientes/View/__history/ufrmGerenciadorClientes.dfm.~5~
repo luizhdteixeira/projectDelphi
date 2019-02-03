@@ -1,0 +1,146 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Gerenciador de Clientes'
+  ClientHeight = 456
+  ClientWidth = 756
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  Position = poScreenCenter
+  PixelsPerInch = 96
+  TextHeight = 13
+  object pnlPrincipal: TPanel
+    Left = 0
+    Top = 0
+    Width = 756
+    Height = 456
+    Align = alClient
+    TabOrder = 0
+    object pclGerenciadorClientes: TPageControl
+      AlignWithMargins = True
+      Left = 4
+      Top = 4
+      Width = 748
+      Height = 407
+      ActivePage = tbsManutecao
+      Align = alClient
+      TabOrder = 0
+      ExplicitHeight = 405
+      object tbsListagem: TTabSheet
+        Caption = 'Listagem'
+        ExplicitHeight = 380
+        DesignSize = (
+          740
+          379)
+        object dbgListagem: TDBGrid
+          AlignWithMargins = True
+          Left = 0
+          Top = 0
+          Width = 734
+          Height = 345
+          Anchors = [akLeft, akTop, akRight]
+          TabOrder = 0
+          TitleFont.Charset = DEFAULT_CHARSET
+          TitleFont.Color = clWindowText
+          TitleFont.Height = -11
+          TitleFont.Name = 'Tahoma'
+          TitleFont.Style = []
+          Columns = <
+            item
+              Expanded = False
+              FieldName = 'Nome'
+              Width = 286
+              Visible = True
+            end
+            item
+              Expanded = False
+              FieldName = 'Sexo'
+              Width = 101
+              Visible = True
+            end
+            item
+              Expanded = False
+              FieldName = 'RG'
+              Width = 155
+              Visible = True
+            end
+            item
+              Expanded = False
+              FieldName = 'CPF'
+              Width = 168
+              Visible = True
+            end>
+        end
+        object btnIncluir: TButton
+          AlignWithMargins = True
+          Left = 3
+          Top = 351
+          Width = 110
+          Height = 25
+          Anchors = [akBottom]
+          Caption = 'Incluir'
+          TabOrder = 1
+          OnClick = btnIncluirClick
+        end
+        object btnEditar: TButton
+          AlignWithMargins = True
+          Left = 119
+          Top = 351
+          Width = 110
+          Height = 25
+          Anchors = [akBottom]
+          Caption = 'Editar'
+          TabOrder = 2
+        end
+        object btnExcluir: TButton
+          AlignWithMargins = True
+          Left = 235
+          Top = 351
+          Width = 110
+          Height = 25
+          Anchors = [akBottom]
+          Caption = 'Excluir'
+          TabOrder = 3
+          OnClick = btnExcluirClick
+        end
+        object btnImprimir: TButton
+          AlignWithMargins = True
+          Left = 627
+          Top = 351
+          Width = 110
+          Height = 25
+          Anchors = [akBottom]
+          Caption = 'Imprimir Relat'#243'rio'
+          TabOrder = 4
+        end
+      end
+      object tbsManutecao: TTabSheet
+        Caption = 'Manute'#231#227'o'
+        ImageIndex = 1
+        ExplicitHeight = 420
+      end
+      object tbsSistema: TTabSheet
+        Caption = 'Sistema'
+        ImageIndex = 2
+        ExplicitHeight = 420
+      end
+    end
+    object Panel1: TPanel
+      Left = 1
+      Top = 414
+      Width = 754
+      Height = 41
+      Align = alBottom
+      Caption = 'Panel1'
+      TabOrder = 1
+      ExplicitLeft = 488
+      ExplicitTop = 415
+      ExplicitWidth = 185
+    end
+  end
+end
