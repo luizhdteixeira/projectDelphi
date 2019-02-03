@@ -2,8 +2,8 @@ object Form1: TForm1
   Left = 0
   Top = 0
   Caption = 'Gerenciador de Clientes'
-  ClientHeight = 316
-  ClientWidth = 732
+  ClientHeight = 360
+  ClientWidth = 735
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -18,37 +18,33 @@ object Form1: TForm1
   object pnlPrincipal: TPanel
     Left = 0
     Top = 0
-    Width = 732
-    Height = 316
+    Width = 735
+    Height = 360
     Align = alClient
     TabOrder = 0
-    ExplicitLeft = 56
-    ExplicitTop = 96
-    ExplicitWidth = 185
-    ExplicitHeight = 41
+    ExplicitWidth = 732
+    ExplicitHeight = 316
     object pclGerenciadorClientes: TPageControl
       AlignWithMargins = True
       Left = 4
       Top = 4
-      Width = 724
-      Height = 308
-      ActivePage = tbsListagem
+      Width = 727
+      Height = 352
+      ActivePage = tbsSistema
       Align = alClient
       TabOrder = 0
-      ExplicitLeft = 1
-      ExplicitTop = 1
-      ExplicitWidth = 581
-      ExplicitHeight = 314
+      ExplicitWidth = 724
+      ExplicitHeight = 308
       object tbsListagem: TTabSheet
         Caption = 'Listagem'
-        ExplicitWidth = 573
-        ExplicitHeight = 286
+        ExplicitWidth = 716
+        ExplicitHeight = 280
         object dbgListagem: TDBGrid
           AlignWithMargins = True
           Left = 3
           Top = 3
-          Width = 710
-          Height = 274
+          Width = 713
+          Height = 318
           Align = alClient
           TabOrder = 0
           TitleFont.Charset = DEFAULT_CHARSET
@@ -59,17 +55,18 @@ object Form1: TForm1
         end
         object btnIncluir: TButton
           AlignWithMargins = True
-          Left = 3
-          Top = 255
+          Left = 35
+          Top = 277
           Width = 110
           Height = 25
           Caption = 'Incluir'
           TabOrder = 1
+          OnClick = btnIncluirClick
         end
         object btnEditar: TButton
           AlignWithMargins = True
-          Left = 115
-          Top = 255
+          Left = 151
+          Top = 277
           Width = 110
           Height = 25
           Caption = 'Editar'
@@ -77,17 +74,18 @@ object Form1: TForm1
         end
         object btnExcluir: TButton
           AlignWithMargins = True
-          Left = 227
-          Top = 255
+          Left = 267
+          Top = 277
           Width = 110
           Height = 25
           Caption = 'Excluir'
           TabOrder = 3
+          OnClick = btnExcluirClick
         end
         object btnImprimir: TButton
           AlignWithMargins = True
-          Left = 603
-          Top = 255
+          Left = 580
+          Top = 277
           Width = 110
           Height = 25
           Caption = 'Imprimir Relat'#243'rio'
@@ -97,14 +95,14 @@ object Form1: TForm1
       object tbsManutecao: TTabSheet
         Caption = 'Manute'#231#227'o'
         ImageIndex = 1
-        ExplicitWidth = 573
-        ExplicitHeight = 286
+        ExplicitWidth = 716
+        ExplicitHeight = 503
       end
       object tbsSistema: TTabSheet
         Caption = 'Sistema'
         ImageIndex = 2
-        ExplicitWidth = 573
-        ExplicitHeight = 286
+        ExplicitWidth = 716
+        ExplicitHeight = 503
       end
     end
   end

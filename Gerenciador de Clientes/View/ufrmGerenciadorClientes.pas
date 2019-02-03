@@ -19,6 +19,8 @@ type
     btnEditar: TButton;
     btnExcluir: TButton;
     btnImprimir: TButton;
+    procedure btnIncluirClick(Sender: TObject);
+    procedure btnExcluirClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -31,5 +33,15 @@ var
 implementation
 
 {$R *.dfm}
+
+procedure TForm1.btnExcluirClick(Sender: TObject);
+begin
+//
+end;
+
+procedure TForm1.btnIncluirClick(Sender: TObject);
+begin
+//
+end;
 
 end.
