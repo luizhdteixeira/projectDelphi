@@ -1,0 +1,205 @@
+object DM_ControllerDados: TDM_ControllerDados
+  OldCreateOrder = False
+  Height = 465
+  Width = 492
+  object SQLConnection: TSQLConnection
+    ConnectionName = 'Devart MySQL'
+    DriverName = 'DevartMySQL'
+    LoginPrompt = False
+    Params.Strings = (
+      'DriverUnit=DbxDevartMySql'
+      
+        'DriverPackageLoader=TDBXDynalinkDriverLoader,DBXCommonDriver240.' +
+        'bpl'
+      
+        'MetaDataPackageLoader=TDBXDevartMySqlMetaDataCommandFactory,DbxD' +
+        'evartMySqlDriver240.bpl'
+      'ProductName=DevartMySQL'
+      'GetDriverFunc=getSQLDriverMySQL'
+      'LibraryName=dbexpmda40.dll'
+      'VendorLib=libmysql.dll'
+      'MaxBlobSize=-1'
+      'UseUnicode=True'
+      'BlobSize=-1'
+      'HostName=localhost'
+      'Database=mycliente'
+      'DriverName=DevartMySQL'
+      'User_Name=root'
+      'Password=1234'
+      'FetchAll=True'
+      'EnableBoolean=False'
+      'IPVersion=IPv4')
+    Connected = True
+    Left = 40
+    Top = 24
+  end
+  object SQL_endereco: TSQLQuery
+    SchemaName = 'mycliente'
+    Active = True
+    MaxBlobSize = -1
+    Params = <
+      item
+        DataType = ftUnknown
+        Name = 'CPCODTELEFONECLIENTE'
+        ParamType = ptInput
+      end>
+    SQL.Strings = (
+      'SELECT'
+      'T.*'
+      'FROM'
+      'TELEFONECLIENTE T'
+      'INNER JOIN CLIENTES C'
+      'ON (T.CPCODTELEFONECLIENTE=C.CETELEFONECLIENTE)'
+      'WHERE'
+      'T.CPCODTELEFONECLIENTE= :CPCODTELEFONECLIENTE')
+    SQLConnection = SQLConnection
+    Left = 112
+    Top = 88
+  end
+  object SQLDS_clientes: TSQLDataSet
+    CommandText = 
+      'SELECT'#13#10'cpcliente,'#13#10'nomecliente,'#13#10'sexocliente,'#13#10'rgcliente,'#13#10'cpfc' +
+      'liente'#13#10'FROM clientes ORDER BY cpcliente;'
+    MaxBlobSize = -1
+    Params = <>
+    SQLConnection = SQLConnection
+    Left = 112
+    Top = 24
+  end
+  object DSP_clientes: TDataSetProvider
+    DataSet = SQLDS_clientes
+    Left = 216
+    Top = 24
+  end
+  object CDS_clientes: TClientDataSet
+    Active = True
+    Aggregates = <>
+    Params = <>
+    ProviderName = 'DSP_clientes'
+    Left = 320
+    Top = 24
+    object CDS_clientescpcliente: TIntegerField
+      FieldName = 'cpcliente'
+      ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
+    end
+    object CDS_clientesnomecliente: TWideStringField
+      FieldName = 'nomecliente'
+      Size = 100
+    end
+    object CDS_clientessexocliente: TWideStringField
+      FieldName = 'sexocliente'
+      Size = 2
+    end
+    object CDS_clientesrgcliente: TWideStringField
+      FieldName = 'rgcliente'
+      Size = 12
+    end
+    object CDS_clientescpfcliente: TWideStringField
+      FieldName = 'cpfcliente'
+      Size = 14
+    end
+  end
+  object CDS_endereco: TClientDataSet
+    Aggregates = <>
+    Params = <>
+    ProviderName = 'DSP_endereco'
+    Left = 320
+    Top = 88
+  end
+  object DSP_endereco: TDataSetProvider
+    DataSet = SQL_endereco
+    Left = 216
+    Top = 88
+  end
+  object DSP_telefone: TDataSetProvider
+    DataSet = SQL_telefone
+    Left = 216
+    Top = 152
+  end
+  object DSP_acesso: TDataSetProvider
+    Left = 216
+    Top = 216
+  end
+  object CDS_telefone: TClientDataSet
+    Aggregates = <>
+    Params = <>
+    Left = 320
+    Top = 152
+  end
+  object CDS_acesso: TClientDataSet
+    Aggregates = <>
+    Params = <>
+    Left = 320
+    Top = 216
+  end
+  object SQL_telefone: TSQLQuery
+    Active = True
+    MaxBlobSize = -1
+    Params = <
+      item
+        DataType = ftUnknown
+        Name = 'CPCODENDCLIENTE'
+        ParamType = ptInput
+      end>
+    SQL.Strings = (
+      'SELECT'
+      'E.*'
+      'FROM'
+      'ENDERECOCLIENTE E'
+      'INNER JOIN CLIENTES C'
+      'ON (E.CPCODENDCLIENTE=C.CEENDERECOCLIENTE)'
+      'WHERE'
+      'E.CPCODENDCLIENTE = :CPCODENDCLIENTE')
+    SQLConnection = SQLConnection
+    Left = 112
+    Top = 152
+  end
+  object SQL_acesso: TSQLQuery
+    MaxBlobSize = -1
+    Params = <
+      item
+        DataType = ftWideString
+        Name = 'SENHA'
+        ParamType = ptInput
+      end>
+    SQL.Strings = (
+      'SELECT'
+      '* FROM'
+      'ACESSO'
+      'WHERE'
+      'SENHA= :SENHA')
+    SQLConnection = SQLConnection
+    Left = 112
+    Top = 216
+  end
+  object SQLQuery1: TSQLQuery
+    Params = <>
+    Left = 112
+    Top = 280
+  end
+  object SQLQuery2: TSQLQuery
+    Params = <>
+    Left = 112
+    Top = 352
+  end
+  object DataSetProvider4: TDataSetProvider
+    Left = 216
+    Top = 280
+  end
+  object DataSetProvider5: TDataSetProvider
+    Left = 216
+    Top = 352
+  end
+  object ClientDataSet4: TClientDataSet
+    Aggregates = <>
+    Params = <>
+    Left = 320
+    Top = 280
+  end
+  object ClientDataSet5: TClientDataSet
+    Aggregates = <>
+    Params = <>
+    Left = 320
+    Top = 352
+  end
+end

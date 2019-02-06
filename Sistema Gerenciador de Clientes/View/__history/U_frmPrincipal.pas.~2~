@@ -1,0 +1,28 @@
+unit U_frmPrincipal;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ComCtrls;
+
+type
+  TFrmPrincipal = class(TForm)
+    PclGerenciador: TPageControl;
+    TbsListagem: TTabSheet;
+    TbsManutenção: TTabSheet;
+    TbsSistema: TTabSheet;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  FrmPrincipal: TFrmPrincipal;
+
+implementation
+
+{$R *.dfm}
+
+end.

@@ -1,0 +1,19 @@
+program Gerenciador;
+
+uses
+  Vcl.Forms,
+  U_frmLogin in 'View\U_frmLogin.pas' {FrmLogin},
+  Vcl.Themes,
+  Vcl.Styles,
+  U_ControllerDados in 'Controller\U_ControllerDados.pas' {DataModule1: TDataModule};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  TStyleManager.TrySetStyle('Windows10');
+  Application.CreateForm(TFrmLogin, FrmLogin);
+  Application.CreateForm(TDataModule1, DataModule1);
+  Application.Run;
+end.

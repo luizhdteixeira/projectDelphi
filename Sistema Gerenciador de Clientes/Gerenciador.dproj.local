@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2019/02/04 22:42:28.000.205,=C:\Users\luizt\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2019/02/04 22:46:46.000.947,C:\Users\luizt\Documents\GitHub\projectDelphi\Sistema Gerenciador de Clientes\View\U_frmLogin.pas=C:\Users\luizt\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2019/02/04 22:46:46.000.947,C:\Users\luizt\Documents\GitHub\projectDelphi\Sistema Gerenciador de Clientes\View\U_frmLogin.dfm=C:\Users\luizt\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2019/02/04 22:46:58.000.358,C:\Users\luizt\Documents\GitHub\projectDelphi\Sistema Gerenciador de Clientes\Gerenciador.dproj=C:\Users\luizt\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2019/02/04 23:12:00.000.720,=C:\Users\luizt\Documents\GitHub\projectDelphi\Sistema Gerenciador de Clientes\Unit1.pas</Transaction>
+    <Transaction>2019/02/04 23:12:48.000.486,C:\Users\luizt\Documents\GitHub\projectDelphi\Sistema Gerenciador de Clientes\Controller\U_ControllerDados.dfm=C:\Users\luizt\Documents\GitHub\projectDelphi\Sistema Gerenciador de Clientes\Unit1.dfm</Transaction>
+    <Transaction>2019/02/04 23:12:48.000.486,C:\Users\luizt\Documents\GitHub\projectDelphi\Sistema Gerenciador de Clientes\Controller\U_ControllerDados.pas=C:\Users\luizt\Documents\GitHub\projectDelphi\Sistema Gerenciador de Clientes\Unit1.pas</Transaction>
+    <Transaction>2019/02/05 00:01:43.000.325,=C:\Users\luizt\Documents\GitHub\projectDelphi\Sistema Gerenciador de Clientes\Unit1.pas</Transaction>
+    <Transaction>2019/02/05 00:01:59.000.899,C:\Users\luizt\Documents\GitHub\projectDelphi\Sistema Gerenciador de Clientes\Model\U_ModelFuncao.pas=C:\Users\luizt\Documents\GitHub\projectDelphi\Sistema Gerenciador de Clientes\Unit1.pas</Transaction>
+    <Transaction>2019/02/05 00:25:42.000.535,=C:\Users\luizt\Documents\GitHub\projectDelphi\Sistema Gerenciador de Clientes\Unit1.pas</Transaction>
+    <Transaction>2019/02/05 00:25:56.000.552,C:\Users\luizt\Documents\GitHub\projectDelphi\Sistema Gerenciador de Clientes\Model\U_ModelAcessar.pas=C:\Users\luizt\Documents\GitHub\projectDelphi\Sistema Gerenciador de Clientes\Unit1.pas</Transaction>
+    <Transaction>2019/02/05 00:50:28.000.495,=C:\Users\luizt\Documents\GitHub\projectDelphi\Sistema Gerenciador de Clientes\Unit1.pas</Transaction>
+    <Transaction>2019/02/05 00:53:29.000.400,C:\Users\luizt\Documents\GitHub\projectDelphi\Sistema Gerenciador de Clientes\Unit1.dfm=C:\Users\luizt\Documents\GitHub\projectDelphi\Sistema Gerenciador de Clientes\View\U_frmPrincipal.dfm</Transaction>
+    <Transaction>2019/02/05 00:53:29.000.400,C:\Users\luizt\Documents\GitHub\projectDelphi\Sistema Gerenciador de Clientes\Unit1.pas=C:\Users\luizt\Documents\GitHub\projectDelphi\Sistema Gerenciador de Clientes\View\U_frmPrincipal.pas</Transaction>
+  </Transactions>
+</BorlandProject>

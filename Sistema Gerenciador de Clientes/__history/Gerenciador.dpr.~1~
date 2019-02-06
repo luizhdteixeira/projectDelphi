@@ -1,0 +1,17 @@
+program Gerenciador;
+
+uses
+  Vcl.Forms,
+  U_frmLogin in 'View\U_frmLogin.pas' {FrmLogin},
+  Vcl.Themes,
+  Vcl.Styles;
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  TStyleManager.TrySetStyle('Windows10');
+  Application.CreateForm(TFrmLogin, FrmLogin);
+  Application.Run;
+end.

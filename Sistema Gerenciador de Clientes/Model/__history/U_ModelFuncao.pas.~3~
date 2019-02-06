@@ -1,0 +1,46 @@
+unit U_ModelFuncao;
+
+interface
+
+uses U_ControllerDados, Data.DB, Data.SqlExpr;
+
+function GetCP(Campo, Tabela: String): Integer;
+function GetCPFCad(CPF: String): Boolean;
+
+implementation
+
+// Função para encontrar o último CP.
+function GetCP(Campo, Tabela: String): Integer;
+begin
+  With TSQLQuery.Create(nil) do
+    try
+      SQLConnection := DM_ControllerDados.SQLConnection;
+      SQL.Add('SELECT ' + Campo + ' FROM ' + Tabela + ' ORDER BY ' + Campo +
+        ' DESC LIMIT 1');
+      Open;
+      Result := Fields[0].AsInteger + 1;
+    finally
+      Close;
+      Free;
+    end;
+end;
+
+// Função para validar se existe CPF já cadastrado.
+function GetCPFCadastrado(CPF: String): Boolean;
+begin
+  Result := false;
+  with TSQLQuery.Create(nil) do
+    try
+      SQLConnection := DM_ControllerDados.SQLConnection;
+      SQL.Add('SELECT CPCLIENTE FROM CLIENTES WHERE CPF = :CPF');
+      Params[0].AsString := CPF;
+      Open;
+      if not IsEmpty then
+        Result := true;
+    finally
+      Close;
+      Free;
+    end;
+end;
+
+end.

@@ -1,0 +1,50 @@
+unit U_ControllerDados;
+
+interface
+
+uses
+  System.SysUtils, System.Classes, DbxDevartMySql, Data.FMTBcd, Data.DB,
+  Datasnap.DBClient, Datasnap.Provider, Data.SqlExpr;
+
+type
+  TDataModule1 = class(TDataModule)
+    SQLConnection1: TSQLConnection;
+    SQL_endereco: TSQLQuery;
+    SQLDS_clientes: TSQLDataSet;
+    DSP_clientes: TDataSetProvider;
+    CDS_clientes: TClientDataSet;
+    CDS_clientescpcliente: TIntegerField;
+    CDS_clientesnomecliente: TWideStringField;
+    CDS_clientessexocliente: TWideStringField;
+    CDS_clientesrgcliente: TWideStringField;
+    CDS_clientescpfcliente: TWideStringField;
+    CDS_endereco: TClientDataSet;
+    DSP_endereco: TDataSetProvider;
+    DSP_telefone: TDataSetProvider;
+    DSP_acesso: TDataSetProvider;
+    CDS_telefone: TClientDataSet;
+    CDS_acesso: TClientDataSet;
+    SQL_telefone: TSQLQuery;
+    SQL_acesso: TSQLQuery;
+    SQLQuery1: TSQLQuery;
+    SQLQuery2: TSQLQuery;
+    DataSetProvider4: TDataSetProvider;
+    DataSetProvider5: TDataSetProvider;
+    ClientDataSet4: TClientDataSet;
+    ClientDataSet5: TClientDataSet;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  DataModule1: TDataModule1;
+
+implementation
+
+{%CLASSGROUP 'Vcl.Controls.TControl'}
+
+{$R *.dfm}
+
+end.
