@@ -1,2 +1,2 @@
 # projectDelphi
-Estudos com Delphi RAD 10.1 Berlin
+Estudos com Delphi RADStudio
